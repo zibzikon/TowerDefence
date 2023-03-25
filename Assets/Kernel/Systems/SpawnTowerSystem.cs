@@ -10,12 +10,10 @@ namespace Kernel.Systems
 {
     public class SpawnTowerSystem : ReactiveSystem<InputEntity>
     {
-        private readonly GameContext _gameContext;
         private readonly ITowerFactory _towerFactory;
 
-        public SpawnTowerSystem(GameContext gameContext, InputContext inputContext, ITowerFactory towerFactory) : base(inputContext)
+        public SpawnTowerSystem(InputContext inputContext, ITowerFactory towerFactory) : base(inputContext)
         {
-            _gameContext = gameContext;
             _towerFactory = towerFactory;
         }
 
