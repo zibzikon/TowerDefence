@@ -7,11 +7,11 @@ namespace Foundation.Factories
     public class TowerEntityFactory : ITowerEntityFactory
     {
         
-        private readonly GameEntityCreator _creator;
+        private readonly IGameEntityCreator _creator;
         private readonly IComponentBuilder _componentBuilder;
         private readonly IComponentsIndexesProvider _componentsIndexesProvider;
 
-        public TowerEntityFactory(GameEntityCreator creator,
+        public TowerEntityFactory(IGameEntityCreator creator,
             IComponentBuilder componentBuilder, IComponentsIndexesProvider componentsIndexesProvider)
         {
             _creator = creator;
