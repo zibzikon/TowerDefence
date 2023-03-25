@@ -3,8 +3,8 @@ using System.Reflection;
 using DesperateDevs.Utils;
 using Entitas;
 using Foundation.Data;
-using Foundation.Exceptions;
 using Foundation.Services.Interfaces;
+using Foundation.Utils.Exceptions;
 
 namespace Foundation.Services
 {

@@ -2,8 +2,8 @@ using System;
 using System.Linq;
 using DesperateDevs.Utils;
 using Entitas;
-using Foundation.Exceptions;
 using Foundation.Services.Interfaces;
+using Foundation.Utils.Exceptions;
 using Kernel.Extensions;
 using ModestTree;
 

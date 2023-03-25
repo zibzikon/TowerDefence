@@ -1,6 +1,6 @@
 using System;
 
-namespace Foundation.Exceptions
+namespace Foundation.Utils.Exceptions
 {
     public class NotImplementsInterfaceException : Exception
     {

@@ -30,6 +30,8 @@ namespace Kernel.Installers
             Container.Bind<ITowersViewsProvider>().To<TowersViewsProvider>().AsSingle().WithArguments(
                 _towerViewsPrefabsResourcesNames.ToDictionary(x => _towerViewsPrefabsResourcesNames.IndexOf(x)));
             
+            Container.Bind<IGameEntityCreator>().To<GameEntityCreator>().AsSingle();
+            
             Container.Bind<ITowerEntityFactory>().To<TowerEntityFactory>().AsSingle();
             Container.Bind<ITowerViewFactory>().To<TowerViewFactory>().AsSingle();
             Container.Bind<ITowerFactory>().To<TowerFactory>().AsSingle();
