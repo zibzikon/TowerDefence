@@ -9,7 +9,6 @@ namespace Kernel.Installers
         public override void InstallBindings()
         {
             Container.Bind<IComponentsIndexesProvider>().To<ComponentsIndexesProvider>().AsSingle();
-            Container.Bind<IGameEntityCreator>().To<GameEntityCreator>().AsSingle();
             Container.Bind<IInput>().To<UnityInput>().AsSingle();
             Container.Bind<IResourcesLoader>().To<UnityResourcesBasedResourceLoader>().AsSingle();
             Container.Bind<IUnityEntityViewCreator>().To<UnityEntityViewCreator>().AsSingle();

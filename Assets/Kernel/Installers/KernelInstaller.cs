@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using Foundation.Factories;
+using Foundation.Factories.Interfaces;
 using Foundation.Services;
 using Foundation.Services.Interfaces;
 using Kernel.Systems.Registration;
@@ -27,6 +29,10 @@ namespace Kernel.Installers
             
             Container.Bind<ITowersViewsProvider>().To<TowersViewsProvider>().AsSingle().WithArguments(
                 _towerViewsPrefabsResourcesNames.ToDictionary(x => _towerViewsPrefabsResourcesNames.IndexOf(x)));
+            
+            Container.Bind<ITowerEntityFactory>().To<TowerEntityFactory>().AsSingle();
+            Container.Bind<ITowerViewFactory>().To<TowerViewFactory>().AsSingle();
+            Container.Bind<ITowerFactory>().To<TowerFactory>().AsSingle();
         }
     }
 }
