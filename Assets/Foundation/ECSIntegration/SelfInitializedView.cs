@@ -2,7 +2,7 @@ using Foundation.Attributes;
 using UnityEngine;
 using Zenject;
 
-namespace Foundation.ECSIntegration
+namespace Kernel.ECSIntegration
 {
     [ImplicitInjectable]
     [RequireComponent(typeof(EntityView))]

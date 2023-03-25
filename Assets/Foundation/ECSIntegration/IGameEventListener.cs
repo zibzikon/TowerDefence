@@ -1,4 +1,4 @@
-namespace Foundation.ECSIntegration
+namespace Kernel.ECSIntegration
 {
     public interface IGameEventListener
     {

@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Foundation.ECSIntegration
+namespace Kernel.ECSIntegration
 {
     public sealed class EntityView : MonoBehaviour
     {

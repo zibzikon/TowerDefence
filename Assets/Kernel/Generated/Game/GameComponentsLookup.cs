@@ -10,22 +10,36 @@ public static class GameComponentsLookup {
 
     public const int Enemy = 0;
     public const int FollowingPath = 1;
-    public const int MovingSpeed = 2;
-    public const int PathFollowingProgress = 3;
-    public const int Position = 4;
-    public const int Rotation = 5;
-    public const int PositionListener = 6;
-    public const int RotationListener = 7;
+    public const int ID = 2;
+    public const int Movable = 3;
+    public const int MovePosition = 4;
+    public const int MovingSpeed = 5;
+    public const int NearestTowerHolderID = 6;
+    public const int PathFollowingProgress = 7;
+    public const int PlacingTower = 8;
+    public const int Position = 9;
+    public const int Rotation = 10;
+    public const int TowerHolder = 11;
+    public const int TowerTypeID = 12;
+    public const int PositionListener = 13;
+    public const int RotationListener = 14;
 
-    public const int TotalComponents = 8;
+    public const int TotalComponents = 15;
 
     public static readonly string[] componentNames = {
         "Enemy",
         "FollowingPath",
+        "ID",
+        "Movable",
+        "MovePosition",
         "MovingSpeed",
+        "NearestTowerHolderID",
         "PathFollowingProgress",
+        "PlacingTower",
         "Position",
         "Rotation",
+        "TowerHolder",
+        "TowerTypeID",
         "PositionListener",
         "RotationListener"
     };
@@ -33,10 +47,17 @@ public static class GameComponentsLookup {
     public static readonly System.Type[] componentTypes = {
         typeof(Kernel.Components.Enemy),
         typeof(Kernel.Components.FollowingPath),
+        typeof(Kernel.Components.ID),
+        typeof(Kernel.Components.Movable),
+        typeof(Kernel.Components.MovePosition),
         typeof(Kernel.Components.MovingSpeed),
+        typeof(Kernel.Components.NearestTowerHolderID),
         typeof(Kernel.Components.PathFollowingProgress),
+        typeof(Kernel.Components.PlacingTower),
         typeof(Kernel.Components.Position),
         typeof(Kernel.Components.Rotation),
+        typeof(Kernel.Components.TowerHolder),
+        typeof(Kernel.Components.TowerTypeID),
         typeof(PositionListenerComponent),
         typeof(RotationListenerComponent)
     };

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Foundation.ECSIntegration.Listeners
+namespace Kernel.ECSIntegration.Listeners
 {
     public class RotationListener : MonoBehaviour, IGameEventListener, IRotationListener
     {

@@ -5,7 +5,7 @@ using Kernel.Extensions;
 using UnityEngine;
 using Zenject;
 
-namespace Kernel
+namespace Kernel.Installers
 {
     public class SceneInstaller : MonoInstaller
     {

@@ -1,5 +1,5 @@
 using Foundation.Prototyping;
-using Sirenix.OdinInspector;
+//using Sirenix.OdinInspector;
 using UnityEngine;
 using static UnityEngine.Vector3;
 
@@ -50,7 +50,7 @@ public class BezierCurvePrototypeVisualizer : MonoBehaviour
         DrawCurve(p1, p2, p3, p4);
     }
 
-    [ShowInInspector, Button]
+    //[ShowInInspector, Button]
     public void Button() => Debug.Log("Opetenis");
 
     private static void DrawCurve(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4)
